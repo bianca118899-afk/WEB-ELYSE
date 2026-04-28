@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata Elyse Florensia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Boogaloo', cursive;
+    background: linear-gradient(to bottom, #ffe6cc, #fff5ec);
+    overflow-x: hidden;
+}
+
+/* 🌟 efek jatuh belakang */
+.fall {
+    position: fixed;
+    top: -120px;
+    font-size: 55px;
+    animation: fall linear infinite;
+    pointer-events: none;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-120px) rotate(0deg); }
+    100% { transform: translateY(110vh) rotate(360deg); }
+}
+
+/* container */
+.container {
+    max-width: 780px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.92);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 2;
+}
+
+/* judul */
+h1 {
+    text-align: center;
+    font-size: 38px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        color: #cc6600;
+        text-shadow: 0 0 10px #ffcc99;
+    }
+    to {
+        color: #ff3300;
+        text-shadow: 0 0 25px #ff6600;
+    }
+}
+
+/* gambar */
+.profile-img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 220px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px orange;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* blink */
+.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%,100% { opacity: 1; }
+    50% { opacity: 0.2; }
+}
+
+/* teks */
+.section {
+    margin-top: 15px;
+}
+
+p {
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+a {
+    color: #ff6600;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<script>
+let icons = ["🍪","🐱","💖","🐾","✨"];
+
+for(let i=0; i<45; i++){
+    let el = document.createElement("div");
+    el.className = "fall";
+
+    el.innerHTML = icons[Math.floor(Math.random()*icons.length)];
+
+    el.style.fontSize = (Math.random()*35 + 40) + "px";
+    el.style.left = Math.random() * 100 + "vw";
+    el.style.animationDuration = (Math.random()*6 + 5) + "s";
+
+    document.body.appendChild(el);
+}
+</script>
+
+<div class="container">
+
+<h1>🐱✨ Biodata Elyse Florensia ✨🐱</h1>
+
+<!-- ✅ GAMBAR KUCING PASTI MUNCUL -->
+<img class="profile-img"
+src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg"
+alt="Kucing Lucu">
+
+<div class="section">
+    <p><span class="blink">🐱</span> <b>Nama:</b> Elyse Florensia</p>
+    <p><span class="blink">💖</span> <b>Umur:</b> 15 tahun</p>
+    <p><span class="blink">✨</span> <b>Tanggal Lahir:</b> 20 Februari 2011</p>
+    <p><span class="blink">🐾</span> <b>Zodiak:</b> <a href="https://youtu.be/RqkWZo9_Eb8" target="_blank">Klik di sini</a></p>
+    <p><span class="blink">🍪</span> <b>Status:</b> Pelajar</p>
+    <p><span class="blink">🐱</span> <b>Sifat:</b> Introvert</p>
+</div>
+
+<div class="section">
+    <p><span class="blink">💖</span> <b>Asal Kota:</b> Sambas</p>
+    <p><span class="blink">✨</span> <b>Sekolah:</b> SMP Amkur Sambas</p>
+</div>
+
+<div class="section">
+    <p><span class="blink">🐾</span> <b>Tinggi Badan:</b> 158 cm</p>
+    <p><span class="blink">🍪</span> <b>Berat Badan:</b> 50 kg</p>
+    <p><span class="blink">🐱</span> <b>Ukuran Baju:</b> L</p>
+    <p><span class="blink">💖</span> <b>Ukuran Sepatu:</b> 39-40</p>
+</div>
+
+<div class="section">
+    <p><span class="blink">✨</span> <b>Hobi:</b> Nonton drama</p>
+    <p><span class="blink">🐾</span> <b>Cita-cita:</b> <a href="https://youtu.be/6rl_bhb9_Dw" target="_blank">Klik di sini</a></p>
+    <p><span class="blink">🐱</span> <b>Hewan Favorite:</b> <a href="https://youtu.be/_IH5MTsbzIc" target="_blank">Klik di sini</a></p>
+</div>
+
+<div class="section">
+    <p><span class="blink">💖</span> <b>Makanan Favorite:</b> <a href="https://youtu.be/GNfRXKsvG04" target="_blank">Klik di sini</a></p>
+    <p><span class="blink">✨</span> <b>Minuman Favorite:</b> <a href="https://youtube.com/shorts/4kxvAIRYq7I" target="_blank">Klik di sini</a></p>
+</div>
+
+<div class="section">
+    <p><span class="blink">🐾</span> <b>Film Favorite:</b> <a href="https://youtu.be/7__sKqLaTMc" target="_blank">Klik di sini</a></p>
+    <p><span class="blink">🍪</span> <b>Drama Favorite:</b> <a href="https://youtu.be/ZaHBGPfi1oM" target="_blank">Klik di sini</a></p>
+    <p><span class="blink">🐱</span> <b>Anime Favorite:</b> <a href="https://youtu.be/XdNKXV9_maM" target="_blank">Klik di sini</a></p>
+    <p><span class="blink">💖</span> <b>Komik Favorite:</b> <a href="https://youtube.com/shorts/P4hX0LTWK1o" target="_blank">Klik di sini</a></p>
+</div>
+
+<div class="section">
+    <p><span class="blink">✨</span> <b>Lagu Favorite:</b> <a href="https://youtu.be/PX-L8vDfMXI" target="_blank">Klik di sini</a></p>
+    <p><span class="blink">🐾</span> <b>Artis Favorite:</b> <a href="https://youtube.com/shorts/lD0PRE2yDR8" target="_blank">Klik di sini</a></p>
+</div>
+
+<div class="section">
+    <p><span class="blink">🍪</span> <b>Warna Kesukaan:</b> <a href="https://youtu.be/6ySLe9v75xg" target="_blank">Klik di sini</a></p>
+    <p><span class="blink">🐱</span> <b>Bunga Favorite:</b> <a href="https://youtube.com/shorts/fHOj-76kK7c" target="_blank">Klik di sini</a></p>
+    <p><span class="blink">💖</span> <b>Negara Favorite:</b> <a href="https://youtu.be/trmS-V729G0" target="_blank">Klik di sini</a></p>
+</div>
+
+</div>
+
+</body>
+</html>
